@@ -45,7 +45,7 @@ if (in_array ( $domain,$secure_domains)) {
 }
 
 $config ['base_url'] = $protocol . $domain;
-
+$config ['base_url'] = "http://docker.test";
 /*
  * |--------------------------------------------------------------------------
  * | Index File

@@ -88,8 +88,8 @@ Header append Cache-Control "no-cache"
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteRule ^(.*)$ index.php?/$1 [L]
-    		RewriteCond %{HTTP:X-Forwarded-Proto} !https
-		RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+    #		RewriteCond %{HTTP:X-Forwarded-Proto} !https
+	#	RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
 </IfModule>
 
 <IfModule !mod_rewrite.c>
